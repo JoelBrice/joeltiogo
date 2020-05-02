@@ -1,0 +1,96 @@
+.header {
+    text-align: center;
+    color: #4b67bb;
+}
+
+
+/* Greeting styling and animation */
+
+.greeting {
+    margin: 0 0 0 5%;
+    color: #f1f2f5;
+}
+
+.about {
+    color: #697ea3;
+    margin-left: 10%;
+}
+
+.about a {
+    font-size: 14px;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: crimson;
+    color: #fff;
+    border: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.about h2 {
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 2px #cfcdcd80;
+    font-size: 60px;
+}
+
+
+/* specialities animaion*/
+
+span:before {
+    font-size: 40px;
+    color: #a0b0df;
+    text-shadow: none;
+    content: " ";
+    animation: animate infinite 8s;
+    -webkit-animation: animate infinite 8s;
+}
+
+@keyframes animate {
+    0% {
+        content: " an  Engineer";
+    }
+    25% {
+        content: " a Developer ";
+    }
+    50% {
+        content: " an Entrepreneur";
+    }
+    75% {
+        content: " an Educator ";
+    }
+    100% {
+        content: " a Mentor";
+    }
+}
+
+.interests {
+    margin-top: 5%;
+}
+
+.interests p {
+    color: #ac3158;
+    text-align: center;
+}
+
+footer h2,
+footer h4 {
+    color: #3e5981;
+}
+
+li a {
+    text-decoration: none;
+    margin-right: 2em;
+    color: #5e90f3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+}
