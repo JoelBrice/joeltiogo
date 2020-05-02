@@ -1,19 +1,21 @@
 body {
     background-color: #191b1f;
-    height: 100vh;
+    padding: 0;
 }
 
 .header {
     text-align: center;
     color: #4b67bb;
-    font-family: 'Montserrat', 'Oswald', 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', 'Roboto', 'Oswald', sans-serif, 'Merriweather', 'Montserrat', 'Open Sans', sans-serif, cursive;
 }
 
 
 /* Greeting styling and animation */
 
 .greeting {
-    margin: 0 0 0 5%;
+    margin-left: 5%;
     color: #a7a8aa;
 }
 
@@ -85,12 +87,18 @@ span:before {
 footer h2,
 footer h4 {
     color: #3e5981;
+    font-family: 'Oswald', 'Merriweather', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 li a {
     text-decoration: none;
     margin-right: 2em;
     color: #5e90f3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', 'Oswald', 'Roboto', sans-serif;
 }
 
 ul {
