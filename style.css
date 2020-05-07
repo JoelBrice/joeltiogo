@@ -44,12 +44,14 @@ body {
     margin: 0;
     padding: 0;
     text-shadow: 0 2px #cfcdcd80;
-    font-size: 60px;
+    font-size: 42px;
+    font-family: 'Merriweather', 'Oswald', 'Roboto', sans-serif;
 }
 
 .about p {
     font-size: 14px;
     color: #898b8d;
+    font-family: 'Merriweather', 'Oswald', 'Roboto', sans-serif;
 }
 
 
@@ -85,6 +87,7 @@ span:before {
 .interests {
     margin-top: 5%;
     color: #f2f2f2;
+    font-family: 'Pacifico', 'Roboto', 'Oswald', sans-serif, 'Merriweather', 'Montserrat', 'Open Sans', sans-serif, cursive;
 }
 
 .interests p {
@@ -142,4 +145,10 @@ a:hover {
     text-align: justify;
     padding: 10px;
     font-size: 12px;
+}
+
+.tertiary:hover,
+.professional:hover,
+.personal:hover {
+    zoom: 1.2;
 }
