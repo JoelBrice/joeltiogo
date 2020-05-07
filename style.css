@@ -17,6 +17,7 @@ body {
 .greeting {
     margin-left: 5%;
     color: #a7a8aa;
+    font-size: 16px;
 }
 
 .about {
@@ -28,7 +29,7 @@ body {
     font-size: 14px;
     padding: 10px 25px;
     text-decoration: none;
-    background-color: crimson;
+    background-color: rgb(20, 83, 220);
     color: #fff;
     border: 5px;
     border-radius: 5px;
@@ -36,6 +37,7 @@ body {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    margin: 1em auto;
 }
 
 .about h2 {
@@ -43,6 +45,11 @@ body {
     padding: 0;
     text-shadow: 0 2px #cfcdcd80;
     font-size: 60px;
+}
+
+.about p {
+    font-size: 14px;
+    color: #898b8d;
 }
 
 
@@ -77,11 +84,13 @@ span:before {
 
 .interests {
     margin-top: 5%;
+    color: #f2f2f2;
 }
 
 .interests p {
-    color: #ac3158;
+    color: #ffbf00;
     text-align: center;
+    margin-top: -30px;
 }
 
 footer h2,
@@ -92,19 +101,45 @@ footer h4 {
     padding: 0;
 }
 
-li a {
+footer li a {
     text-decoration: none;
     margin-right: 2em;
-    color: #5e90f3;
+    color: #97a7c5;
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', 'Oswald', 'Roboto', sans-serif;
 }
 
-ul {
+footer ul {
     list-style-type: none;
 }
 
 footer {
     text-align: center;
+}
+
+a,
+a:visited,
+a:hover {
+    color: rgb(9, 165, 249);
+    text-decoration: none;
+}
+
+.education {
+    display: block;
+    margin: 30px 0 0 10%;
+    text-align: justify;
+    justify-content: center;
+}
+
+.tertiary,
+.professional,
+.personal {
+    display: inline-block;
+    color: #898b8d;
+    width: 300px;
+    margin-left: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 12px;
 }
