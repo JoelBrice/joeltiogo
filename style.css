@@ -167,7 +167,6 @@ a:hover {
 .personal:hover {
     background-color: #021025;
     color: #f2f2f2;
-    pointer-events: hand;
 }
 
 .tertiary h3,
