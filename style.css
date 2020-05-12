@@ -6,10 +6,25 @@ body {
 .header {
     text-align: center;
     color: #4b67bb;
-    background: transparent;
-    margin: 0 auto;
-    padding: 0 auto;
+    align-content: center;
+    justify-content: center;
     font-family: 'Pacifico', 'Roboto', 'Oswald', sans-serif, 'Merriweather', 'Montserrat', 'Open Sans', sans-serif, cursive;
+}
+
+.header h1 {
+    display: inline-block;
+}
+
+img {
+    height: 3%;
+    width: 8%;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 
