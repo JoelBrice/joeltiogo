@@ -157,7 +157,6 @@ a:hover {
     margin-right: 12.5%;
     margin-top: 30px;
     text-align: justify;
-    justify-content: center;
     background-color: #1d1f22;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -169,10 +168,9 @@ a:hover {
 .tertiary,
 .professional,
 .personal {
-    display: inline-block;
-    color: #898b8d;
+    display: block;
+    color: #a7a8a8;
     width: 33%;
-    text-align: justify;
     padding: 8px;
     font-size: 12px;
 }
