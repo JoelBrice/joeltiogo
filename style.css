@@ -188,3 +188,20 @@ a:hover {
     background-color: #002d46;
     text-align: center;
 }
+
+.btn-cv {
+    width: 200px;
+    padding: 10px;
+    background-color: #4c5e86;
+    border: 2px solid #fea12f;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn a {
+    color: #fff;
+}
