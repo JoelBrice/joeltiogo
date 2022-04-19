@@ -4,10 +4,10 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-    { name: 'About', href: '#about', current: true },
-    { name: 'Projects', href: '#projects', current: false },
-    { name: 'Blog', href: '#blog', current: false },
-    { name: 'Contact', href: '#contact', current: false },
+    { name: 'About', href: 'about', current: false },
+    { name: 'Projects', href: 'projects', current: false },
+    { name: 'Blog', href: 'blog', current: false },
+    { name: 'Contact', href: 'contact', current: false },
 ];
 
 function classNames(...classes) {
@@ -46,7 +46,7 @@ export default function Nav() {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-green-700 hover:text-white',
                                                     'px-3 py-2 rounded-md text-sm font-medium'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
@@ -68,7 +68,7 @@ export default function Nav() {
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        item.current ? 'bg-green-900 text-white' : 'text-gray-300 hover:bg-green-700 hover:text-white',
                                         'block px-3 py-2 rounded-md text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
