@@ -44,11 +44,11 @@ export default function About() {
                             <b><a className="expotech" href="https://www.expotechindustries.com"> Expotech Industries</a></b></h3>
                         <p>I have a diverse background going from Electrical to Software Engineering.
                         </p><p> This  gives me an excellent perspective in tackling complex problems.
-                            <p>You can check out my <b><a className='cv' href='shorturl.at/auJO9">Github page</a></b></p>
-                            You can also <a className='mail' href='mailto:joel.tiogo@xpotechindustries.com'>email me</a>
-                            </p>
+                            <p>You can check out my <b><a className='cv' href="shorturl.at/auJO9">Github page</a></b></p>
+                            You can also <a className="mail" href="mailto:joel.tiogo@xpotechindustries.com">email me</a>
+                        </p>
                     </div>
-                    <div className='grow-0 profile'>
+                    <div className="grow-0 profile">
                         <img src={photo} className="profile-pic" />
                     </div>
                 </div>
