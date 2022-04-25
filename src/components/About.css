@@ -1,22 +1,18 @@
-.main {
+/* .main {
     margin: 2em;
-}
+} */
 
-h1 {
-    font-size: 32px;
+.contents h1 {
+    font-size: 36px;
     color: #1F2937;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 900;
-}
-
-.flex-1 {
-    text-align: justify;
-    display: block;
-    padding: 2em;
+    font-weight: 800;
+    margin: 2%;
 }
 
 .profile {
-    margin-right: 15%;
+    margin: 2%;
+    padding: 2%;
 }
 
 .profile-pic {
