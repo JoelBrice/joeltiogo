@@ -2,8 +2,56 @@ import React, { useRef, useState } from "react";
 import { Canvas, render, useFrame } from "react-three-fiber";
 import { useSpring, animated } from '@react-spring/three'
 import photo from '../assets/images/photo.jpg';
-import './About.css';
+import styled from 'styled-components/';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
+const Header = styled.div`
+display: flex;
+padding: 1em;
+margin-top: 1em;
+`;
+const Intro = styled.div`
+display: block;
+width: 60%;
+margin-left: 2em;
+`;
+const Profile = styled.div`
+    display: block;
+    width: 40%;
+    padding: 1em;
+`;
+const Img = styled.img`
+    width: 300px;
+    border-radius: 150px;
+`;
+const Head = styled.div`
+font-size:32px;
+fontweight: 800;
+font-color: #12EDAF;
+text-transform: uppercase;
+padding: 1vmin;
+`;
+const Message = styled.div`
+font-size: 16px; 
+font-weight: 800; 
+color: #FF2276; 
+`;
+const Social = styled.div`
+display: flex;
+text-align: justify; 
+
+`;
+const Stack = styled.div`
+justify-content:center; 
+text-align:center;
+`;
+
+const Education = styled.div`
+display: block; 
+padding: .5em;
+`;
 
 export default function About() {
 
@@ -34,35 +82,42 @@ export default function About() {
         )
     }
     return (
-        <div className="about py-3">
-            <div className='flex px-10'>
-                <div className='contents'>
-                    <div className='grow'>
-                        <h1> Welcome to my Personal website!</h1>
-                        <br />
-                        <h3> I am CEO & Lead engineer at
-                            <b><a className="expotech" href="https://www.expotechindustries.com"> Expotech Industries</a></b></h3>
-                        <p>I have a diverse background going from Electrical to Software Engineering.
-                        </p><p> This  gives me an excellent perspective in tackling complex problems.
-                            <p>You can check out my <b><a className='cv' href="shorturl.at/auJO9">Github page</a></b></p>
-                            You can also <a className="mail" href="mailto:joel.tiogo@xpotechindustries.com">email me</a>
-                        </p>
-                    </div>
-                    <div className="grow-0 profile">
-                        <img src={photo} className="profile-pic" />
-                    </div>
-                </div>
-            </div>
-            <div className="content px-10">
-                <h3> Tech stacks</h3>
-                <p> I am an currently pursuing a Masters degree in AI specializing Facial recognition</p>
-                <p> I love web development and I am a full stack software developer with focus on .Net framework</p>
-            </div>
-            <div className="education" id="canvas-container">
+        <>
+            <Header className="container">
+                <Profile>
+                    <Img src={photo} className="profile-pic" />
+                </Profile>
+                <Intro className='grow'>
+                    <Head> Welcome to my Personal website!</Head>
+                    <Message> This portfolio site is still under construction...</Message>
+                    <br />
+                    <h3> I am CEO & Lead engineer at
+                        <b><a className="expotech" href="https://www.expotechindustries.com"> Expotech Industries</a></b></h3>
+                    <p>I have a diverse background going from Electrical to Software Engineering and many more. This  gives me an excellent perspective in tackling complex programming and real-world problems.
+                    </p>
+                    <Social>
+                        <h3>Find me on these platforms</h3>
+                        <a href="https://www.linkedin.com/in/joeltiogo/">
+                            <LinkedInIcon />
+                        </a>
+                        <a href="https://twitter.com/Joel1208199">
+                            <TwitterIcon />
+                        </a>
+                    </Social>
+                </Intro>
+            </Header>
+            <Stack>
+                <h2 className="tech-title"> Tech stacks</h2>
+                <p> I am a fullstack web developer with focus on the Frontend development. I am currently swithcing to Machine Learning.</p>
+                <p>Here are some of the tools I use to build projects.</p>
+                
+
+            </Stack>
+            <Education>
                 <Canvas>
                     <Box />
                 </Canvas>
-            </div>
-        </div>
+            </Education>
+        </>
     )
 }

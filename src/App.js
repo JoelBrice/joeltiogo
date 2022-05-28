@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Nav from './Navbar';
+import Nav from './components/Navbar';
 import About from './components/About';
-import Projects from './components/Projects';
 import Blog from './components/Blog';
+import NofFound from './components/NofFound';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<NofFound />} />
       </Routes>
     </BrowserRouter>
   );

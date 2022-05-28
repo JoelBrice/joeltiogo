@@ -1,13 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-    { name: 'About', href: 'about', current: false },
-    { name: 'Projects', href: 'projects', current: false },
+    { name: 'About', href: '/', current: false },
+    { name: 'Portfolio', href: 'portfolio', current: false },
     { name: 'Blog', href: 'blog', current: false },
-    { name: 'Contact', href: 'contact', current: false },
 ];
 
 function classNames(...classes) {
@@ -34,7 +33,7 @@ export default function Nav() {
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex-shrink-0 flex items-center">
-                                    <a className='text-white' href="#">Joel Tiogo</a>
+                                    <a className='text-white' href="/">Joel Tiogo</a>
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

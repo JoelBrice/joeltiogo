@@ -1,2 +1,3 @@
 # joeltiogo
-A personal portfolio website
+
+A personal portfolio website built with reactjs
