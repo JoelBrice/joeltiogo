@@ -101,7 +101,7 @@ export default function About() {
                         <b><a className="expotech" href="https://www.expotechindustries.com"> Expotech Industries</a></b></h3>
                     <p>I have a diverse academic background going from Electrical Engineering, Computer Science, and Physics.
                         My professional experiences span accross the renewable energy,  software engineering industry, academia, and entrepreneurship.
-                        I am interested many things but some of the few things I work on everyday are: AI, software architecture,  Entrepreneurship, Data Privacy.
+                        I have various interest but here are some of those I spend most of my time these days: AI, software architecture,  Entrepreneurship, Data Privacy.
                     </p>
                     <br />
                     <Social>
