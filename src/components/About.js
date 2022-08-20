@@ -19,25 +19,22 @@ margin-left: 2em;
 `;
 const Profile = styled.div`
     display: block;
-    width: 40%;
+    width: 30%;
     padding: 1em;
+    margin-left: 2em;
 `;
 const Img = styled.img`
-    width: 300px;
-    border-radius: 150px;
+    width: 200px;
+    border-radius: 100px;
 `;
 const Head = styled.div`
 font-size:32px;
-fontweight: 800;
+fontweight: 900;
 font-color: #12EDAF;
 text-transform: uppercase;
 padding: 1vmin;
 `;
-const Message = styled.div`
-font-size: 16px; 
-font-weight: 800; 
-color: #FF2276; 
-`;
+
 const Social = styled.div`
 display: flex;
 text-align: justify; 
@@ -46,12 +43,22 @@ text-align: justify;
 const Stack = styled.div`
 justify-content:center; 
 text-align:center;
+ background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+ bottom: 0;
+ display: block;
+ padding: 1em;
+ color: #FAFAFA;
+ height: 250px;
 `;
 
 const Education = styled.div`
 display: block; 
 padding: .5em;
 `;
+
+const Expotech = styled.div`
+color: #4BAC66;
+`
 
 export default function About() {
 
@@ -88,36 +95,51 @@ export default function About() {
                     <Img src={photo} className="profile-pic" />
                 </Profile>
                 <Intro className='grow'>
-                    <Head> Welcome to my Personal website!</Head>
-                    <Message> This portfolio site is still under construction...</Message>
+                    <Head> JOEL TIOGO</Head>
                     <br />
-                    <h3> I am CEO & Lead engineer at
+                    <h3> I am the CEO & Lead engineer at
                         <b><a className="expotech" href="https://www.expotechindustries.com"> Expotech Industries</a></b></h3>
-                    <p>I have a diverse background going from Electrical to Software Engineering and many more. This  gives me an excellent perspective in tackling complex programming and real-world problems.
+                    <p>I have a diverse academic background going from Electrical Engineering, Computer Science, and Physics.
+                        My professional experiences span accross the renewable energy,  software engineering industry, academia, and entrepreneurship.
+                        I am interested many things but some of the few things I work on everyday are: AI, software architecture,  Entrepreneurship, Data Privacy.
                     </p>
+                    <br />
                     <Social>
-                        <h3>Find me on these platforms</h3>
                         <a href="https://www.linkedin.com/in/joeltiogo/">
                             <LinkedInIcon />
-                        </a>
-                        <a href="https://twitter.com/Joel1208199">
-                            <TwitterIcon />
                         </a>
                     </Social>
                 </Intro>
             </Header>
             <Stack>
-                <h2 className="tech-title"> Tech stacks</h2>
-                <p> I am a fullstack web developer with focus on the Frontend development. I am currently swithcing to Machine Learning.</p>
-                <p>Here are some of the tools I use to build projects.</p>
-                
+                <h1 className="tech-title"><b> SOME TECH STACKS I USE </b> </h1>
+                <div className="Software">
+                    <br />                    <span> C# ASP.Net </span> |
+                    <span> Javascript </span> |
+                    <span> Python </span> |
+                    <span> Angular </span> |
+                    <span> React </span> |
+                    <span> Pytorch </span> |
+                    <span> Tensorflow </span> |
+                    <span> Pandas, Scikit-learn, numpy </span> |
+                    <span>Git, github, Trello </span>
+                </div>
+                <br />
+                <div className="Electrical">
+                    <span> Digsilent Powerfactory </span> |
+                    <span> AUTOCAD </span> |
+                    <span> Helioscope </span> |
+                    <span> PVSyst</span> |
+                    <span> PV*SOL </span>
+                </div>
+
 
             </Stack>
-            <Education>
+            {/* <Education>
                 <Canvas>
                     <Box />
                 </Canvas>
-            </Education>
+            </Education> */}
         </>
     )
 }

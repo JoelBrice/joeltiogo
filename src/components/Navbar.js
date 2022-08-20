@@ -4,7 +4,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-    { name: 'About', href: '/', current: true },
+    { name: 'About', href: '/', current: false },
     { name: 'Portfolio', href: '/portfolio', current: false },
     { name: 'Blog', href: '/blog', current: false },
 ];
@@ -48,7 +48,7 @@ export default function Nav() {
                                                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-green-700 hover:text-white',
                                                     'px-3 py-2 rounded-md text-sm font-medium'
                                                 )}
-                                                aria-current={item.current ? 'page' : undefined}
+                                                aria-current={item.current ? true : undefined}
                                             >
                                                 {item.name}
                                             </a>
@@ -78,7 +78,8 @@ export default function Nav() {
                         </div>
                     </Disclosure.Panel>
                 </>
-            )}
-        </Disclosure>
+            )
+            }
+        </Disclosure >
     )
 }
