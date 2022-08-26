@@ -2,9 +2,11 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import styled from 'styled-components'
 
 const navigation = [
-    { name: 'About', href: '/', current: false },
+    { href: "/", current: false },
+    { name: 'About', href: '/about', current: false },
     { name: 'Portfolio', href: '/portfolio', current: false },
     { name: 'Blog', href: '/blog', current: false },
 ];
@@ -13,9 +15,15 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
 
+const Logo = styled.div`
+
+font-size: 20px;
+font-weight: bold;
+`;
+
 export default function Nav() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-white">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -33,7 +41,8 @@ export default function Nav() {
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex-shrink-0 flex items-center">
-                                    <a className='text-white' href="/">Joel Tiogo</a>
+                                    <Logo><a className='text-black' href="/">Joel Tiogo</a></Logo>
+
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -45,13 +54,14 @@ export default function Nav() {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-green-700 hover:text-white',
+                                                    item.current ? 'bg-gray-900 text-black-800' : 'text-black-300 hover:text-black',
                                                     'px-3 py-2 rounded-md text-sm font-medium'
                                                 )}
                                                 aria-current={item.current ? true : undefined}
                                             >
                                                 {item.name}
                                             </a>
+
                                         ))}
                                     </div>
                                 </div>
@@ -67,7 +77,7 @@ export default function Nav() {
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'bg-green-900 text-white' : 'text-gray-300 hover:bg-green-700 hover:text-white',
+                                        item.current ? 'bg-white text-black-700' : 'text-gray-800 hover:bg-white hover:text-black',
                                         'block px-3 py-2 rounded-md text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
@@ -77,6 +87,7 @@ export default function Nav() {
                             ))}
                         </div>
                     </Disclosure.Panel>
+                    <hr />
                 </>
             )
             }

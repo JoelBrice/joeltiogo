@@ -4,13 +4,14 @@ import About from './components/About';
 import Blog from './components/Blog';
 import NofFound from './components/NofFound';
 import Portfolio from './components/Portfolio';
+import Home from './components/Home';
 
 function App() {
   return (
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
