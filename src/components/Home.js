@@ -5,7 +5,7 @@ import photo from '../assets/images/photo.jpg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import hackerton from '../assets/images/intel.jpg';
+import hackathon from '../assets/images/intel.jpg';
 
 const Header = styled.div`
 ${'' /* display: block; */}
@@ -60,7 +60,7 @@ export default function Home() {
 
     return (
         <Content>
-            <Intro className='grow'>
+            <Intro className='home'>
 
                 <Description>
                     <p> JB Voumo Tiogo is the Founder, CEO & Lead engineer at
@@ -80,7 +80,7 @@ export default function Home() {
                     <a href="https://www.linkedin.com/in/joeltiogo" ><LinkedInIcon /></a>
                     <a href="https://twitter.com/Joel1208199"><TwitterIcon /></a>
                     <a href="https://github.com/JoelBrice"><GitHubIcon /></a>
-                    <p> Find some news when I am doing my hobby: <a href="https://www.belgiumcampus.ac.za/2019/10/16/bcmusketeers-participate-in-wrc-symposium-hackathon/">At the water commission hackathon</a> </p>
+                    <p> On the news when at a hackathon: <a href="https://www.belgiumcampus.ac.za/2019/10/16/bcmusketeers-participate-in-wrc-symposium-hackathon/">WRC hackathon</a> </p>
                 </Description>
                 <Header>
                     <Profile>
@@ -91,8 +91,8 @@ export default function Home() {
                 <br />
             </Intro>
             <Body>
-                <p>My hackerton days started long from university.</p>
-                <Img src={hackerton} className="hackathon"></Img>
+                <p>My hackathon days started long from university.</p>
+                <Img src={hackathon} className="hackathon"></Img>
             </Body>
         </Content>
     );

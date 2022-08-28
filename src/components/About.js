@@ -24,7 +24,7 @@ width: 100%;
 
 // const Intro = styled.div`
 // padding:2em;
-// background-image: url(${hacker});
+// background-image: url(${hackathon});
 // height: 500px;
 // width: 100%;
 // &p{
