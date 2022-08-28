@@ -80,6 +80,7 @@ export default function Home() {
                     <a href="https://www.linkedin.com/in/joeltiogo" ><LinkedInIcon /></a>
                     <a href="https://twitter.com/Joel1208199"><TwitterIcon /></a>
                     <a href="https://github.com/JoelBrice"><GitHubIcon /></a>
+                    <p> Find some news when I am doing my hobby: <a href="https://www.belgiumcampus.ac.za/2019/10/16/bcmusketeers-participate-in-wrc-symposium-hackathon/">At the water commission hackathon</a> </p>
                 </Description>
                 <Header>
                     <Profile>
@@ -91,7 +92,7 @@ export default function Home() {
             </Intro>
             <Body>
                 <p>My hackerton days started long from university.</p>
-                <Img src={hackerton} className="hackerton"></Img>
+                <Img src={hackerton} className="hackathon"></Img>
             </Body>
         </Content>
     );
