@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import hackathon from '../assets/images/intel.jpg';
+import { device } from './device';
 
 const Header = styled.div`
 ${'' /* display: block; */}
@@ -14,9 +15,27 @@ margin-top: 1em;
 `;
 const Intro = styled.div`
 display: flex;
-flex-flow: column-wrap;
+flex-direction: row;
 margin: 2em;
 font-size: 18px;
+@media (max-width: 638px) {
+    display: flex;
+    flex-direction: column-reverse;
+    ${'' /* display:block; */}
+    font-size: 14px;
+    margin:0;
+    padding:0;
+    max-with: 638px;
+    justify-content: center;
+}
+
+@media(max-width: device.tablet){
+    display:block;
+    font-size: 14px;
+    margin:0;
+    padding: 0;
+
+}
 `;
 
 
@@ -28,21 +47,34 @@ const Description = styled.div`
 
 const Profile = styled.div`
     display: block;
-    min-width: 400px;
+    ${'' /* min-width: 400px; */}
     padding: 1em;
     margin-left: 2em;
+    @media (max-width: 638px) {
+    margin:0;
+    padding:0;
+    max-with: 638;
+    justify-content: center;
+
+}
 `;
 
 const Img = styled.img`
     ${'' /* width: 400px; */}
     padding: 0;
+    min-width:400px; 
     margin-top: -3m;
+
+    @media (max-width:325px){
+        max-width: 100px;
+    }
 `;
 
 const Body = styled.div`
 
-:&Img{
-    height: 400px;
+@media (max-width:638px){
+    display: block;
+    font-size:14px;
 }
 
 `;
@@ -53,6 +85,26 @@ const Link = styled.a`
 
 const Content = styled.div`
     margin:0;
+  @media ${device.laptop} { 
+    display: block;
+  }
+
+  @media ${device.desktop} {
+    display: block;
+  }
+
+  @media $(device.mobileS){
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  @media $(device.mobileL){
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+
 `;
 
 
@@ -62,7 +114,7 @@ export default function Home() {
         <Content>
             <Intro className='home'>
 
-                <Description>
+                <Description className='description'>
                     <p> JB Voumo Tiogo is the Founder, CEO & Lead engineer at
                         <Link href="https://www.expotechindustries.com"> Expotech Industries </Link>
                         with experience in both the electrical engineering and software industry.
@@ -82,7 +134,7 @@ export default function Home() {
                     <a href="https://github.com/JoelBrice"><GitHubIcon /></a>
                     <p> On the news when at a hackathon: <a href="https://www.belgiumcampus.ac.za/2019/10/16/bcmusketeers-participate-in-wrc-symposium-hackathon/">WRC hackathon</a> </p>
                 </Description>
-                <Header>
+                <Header class="header">
                     <Profile>
                         <Img src={photo} className="profile-pic" />
 

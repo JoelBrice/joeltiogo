@@ -4,3 +4,8 @@
 .home a {
     text-decoration: underline;
 }
+.home {
+    @media and(max-width: 425px) {
+        display: block !important;
+    }
+}
