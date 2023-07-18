@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SmartAIr from "../assets/images/smartair.png";
+import Expotech from "../assets/images/expotech.svg";
 
 const Portfolio = () => {
   const projects = [
@@ -15,8 +16,8 @@ const Portfolio = () => {
       id: 2,
       title: "Expotech Industries",
       description: "A startup that provides high quality consulting services in Electrical Engineering, Software Engineering, and Skills development in 4IR.",
-      image: "/images/project2.jpg",
-      link: "../assets/images/smartair.png",
+      image:Expotech,
+      link: "https://www.expotechindustries.com",
     },
     {
       id: 3,
