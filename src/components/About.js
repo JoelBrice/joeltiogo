@@ -20,14 +20,13 @@ function About()
             </div>
             <div className="mt-5 sm:mt-0">
               <p className="mt-3 max-w-2xl text-xl text-gray-500">
-                I am a digital transformation expert with a background in electrical engineering and software development. I have a passion for leveraging technology to drive business value and sustainability.
+              I'm a Business Development Manager with an electrical engineering and software development background. Passionate about leveraging technology for business value and sustainability, with a focus on ESG.
               </p>
               <p className="mt-3 max-w-2xl text-xl text-gray-500">
-                After completing my degree in electrical engineering, I worked as a software developer for several years before starting my own startup. This experience gave me a deep understanding of how technology can be used to solve real-world problems and create value for businesses.
+              After completing my electrical engineering degree, I gained valuable experience as a software developer and founded my own startup. This journey deepened my understanding of technology's role in solving real-world problems and driving business value.
               </p>
               <p className="mt-3 max-w-2xl text-xl text-gray-500">
-                In my current role, I help organizations develop and implement digital transformation strategies that drive growth, improve efficiency, and support sustainability. I am passionate about using technology to create a better world and I believe that digital transformation is a key driver of positive change.
-              </p>
+              In my current role, I facilitate partnerships that drive growth and innovation. I'm dedicated to using technology to create a better world, believing that combining Good ESG practices with advanced technology will shape a brighter future.</p>
             </div>
           </div>
         </div>
