@@ -1,151 +1,46 @@
+import React from "react";
+import profilePic from "../assets/images/0.jpg";
+import styled, { keyframes } from 'styled-components';
+const Container = styled.div`
 
-import { React } from "react";
-import styled from 'styled-components'
-import photo from '../assets/images/photo.jpg';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import hackathon from '../assets/images/intel.jpg';
-import { device } from './device';
+height: 90vh;
 
-const Header = styled.div`
-${'' /* display: block; */}
-padding: 2em;
-margin-top: 1em;
 `;
-const Intro = styled.div`
-display: flex;
-flex-direction: row;
-margin: 2em;
-font-size: 18px;
-@media (max-width: 638px) {
-    display: flex;
-    flex-direction: column-reverse;
-    ${'' /* display:block; */}
-    font-size: 14px;
-    margin:0;
-    padding:0;
-    max-with: 638px;
-    justify-content: center;
+function Home() {
+  return (
+    <Container className="bg-gray-100 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="lg:text-center">
+          <div className="flex justify-center">
+            <img src={profilePic} alt="Profile"
+            className="h-32 w-32 rounded-full object-cover"
+            />
+          </div>
+          <h2 className="mt-4 text-base text-indigo-600 font-semibold tracking-wide uppercase">
+            Welcome to my portfolio
+          </h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            I am Joel Tiogo, Business Developer
+          </p>
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          I specialize in leveraging technology for business value and sustainability, with a focus on ESG.
+          </p>
+          <div className="mt-10 sm:flex sm:justify-center lg:justify-center">
+            <div className="rounded-md shadow">
+              <a href="/portfolio" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                View My Portfolio
+              </a>
+            </div>
+            <div className="mt-3 sm:mt-0 sm:ml-3">
+              <a href="/blog" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                Read My Blog
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
 }
 
-@media(max-width: device.tablet){
-    display:block;
-    font-size: 14px;
-    margin:0;
-    padding: 0;
-
-}
-`;
-
-
-const Description = styled.div`
-    background-color: #f2f2f2;
-    padding: 2em;
-    tex-align: justify;
-`;
-
-const Profile = styled.div`
-    display: block;
-    ${'' /* min-width: 400px; */}
-    padding: 1em;
-    margin-left: 2em;
-    @media (max-width: 638px) {
-    margin:0;
-    padding:0;
-    max-with: 638;
-    justify-content: center;
-
-}
-`;
-
-const Img = styled.img`
-    ${'' /* width: 400px; */}
-    padding: 0;
-    min-width:400px; 
-    margin-top: -3m;
-
-    @media (max-width:325px){
-        max-width: 100px;
-    }
-`;
-
-const Body = styled.div`
-
-@media (max-width:638px){
-    display: block;
-    font-size:14px;
-}
-
-`;
-
-const Link = styled.a`
-    text-decoration: underline;
-`;
-
-const Content = styled.div`
-    margin:0;
-  @media ${device.laptop} { 
-    display: block;
-  }
-
-  @media ${device.desktop} {
-    display: block;
-  }
-
-  @media $(device.mobileS){
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-  @media $(device.mobileL){
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-
-
-`;
-
-
-export default function Home() {
-
-    return (
-        <Content>
-            <Intro className='home'>
-
-                <Description className='description'>
-                    <p> JB Voumo Tiogo is the Founder, CEO & Lead engineer at
-                        <Link href="https://www.expotechindustries.com"> Expotech Industries </Link>
-                        with experience in both the electrical engineering and software industry.
-                    </p>
-                    <br />
-                    <p>With a diverse academic background going from Electrical Engineering, Computer Science, and Physics.
-                        With professional experience spanning accross the software and electrical engineering industry.
-                    </p>
-                    <br />
-                    <p>He has various interests but  currently spends most of his time in AI, software architecture,  Entrepreneurship, and Data Privacy.
-                    </p>
-                    <br />
-                    <p> In his hobby, he likes developing embedded systems, playing chess, football, computer games, and reading.</p>
-                    <br />
-                    <a href="https://www.linkedin.com/in/joeltiogo" ><LinkedInIcon /></a>
-                    <a href="https://twitter.com/Joel1208199"><TwitterIcon /></a>
-                    <a href="https://github.com/JoelBrice"><GitHubIcon /></a>
-                    <p> On the news when at a hackathon: <a href="https://www.belgiumcampus.ac.za/2019/10/16/bcmusketeers-participate-in-wrc-symposium-hackathon/">WRC hackathon</a> </p>
-                </Description>
-                <Header class="header">
-                    <Profile>
-                        <Img src={photo} className="profile-pic" />
-
-                    </Profile>
-                </Header>
-                <br />
-            </Intro>
-            <Body>
-                <p>My hackathon days started long from university.</p>
-                <Img src={hackathon} className="hackathon"></Img>
-            </Body>
-        </Content>
-    );
-}
+export default Home;

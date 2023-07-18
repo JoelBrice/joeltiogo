@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bc0d014.css",
-    "main.js": "/static/js/main.9e6a2681.js",
+    "main.css": "/static/css/main.d68f65f4.css",
+    "main.js": "/static/js/main.2fd16157.js",
     "static/js/787.84f6f9c2.chunk.js": "/static/js/787.84f6f9c2.chunk.js",
-    "static/media/intel.jpg": "/static/media/intel.ad4ba2f62049df41ce0c.jpg",
-    "static/media/hacker.jpg": "/static/media/hacker.c013919f531f01cabd04.jpg",
-    "static/media/intel-student.jpg": "/static/media/intel-student.5c67e01ac9c6277a7295.jpg",
-    "static/media/photo.jpg": "/static/media/photo.174dd511b618e3b22529.jpg",
+    "static/media/0.jpg": "/static/media/0.3ebd2ed19f0a6c1cb10d.jpg",
+    "static/media/webinar.jpg": "/static/media/webinar.3835b7dfceab5dbf69d7.jpg",
+    "static/media/smartair.png": "/static/media/smartair.55c86c5dc02fdab3752e.png",
     "index.html": "/index.html",
-    "main.6bc0d014.css.map": "/static/css/main.6bc0d014.css.map",
-    "main.9e6a2681.js.map": "/static/js/main.9e6a2681.js.map",
+    "main.d68f65f4.css.map": "/static/css/main.d68f65f4.css.map",
+    "main.2fd16157.js.map": "/static/js/main.2fd16157.js.map",
     "787.84f6f9c2.chunk.js.map": "/static/js/787.84f6f9c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bc0d014.css",
-    "static/js/main.9e6a2681.js"
+    "static/css/main.d68f65f4.css",
+    "static/js/main.2fd16157.js"
   ]
 }

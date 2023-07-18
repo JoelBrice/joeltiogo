@@ -1,101 +1,39 @@
 import React from "react";
-import hacker from '../assets/images/hacker.jpg';
-import styled from 'styled-components/';
+import aboutPic from "../assets/images/webinar.jpg";
 
-const Stack = styled.div`
-justify-content:center; 
-text-align:center;
-${'' /* width: 100%; */}
- ${'' /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */}
- bottom: 0;
- display: block;
- flex-start: end;
- padding: 1em;
-
-background-color: #f2f2f2;
-
-`;
-
-const Content = styled.div`
-display: block; 
-margin: 0;
-width: 100%;
-`;
-
-// const Intro = styled.div`
-// padding:2em;
-// background-image: url(${hackathon});
-// height: 500px;
-// width: 100%;
-// &p{
-//     background-color:#ffffff;
-//     padding:2em;
-// }
-
-const Img = styled.img`
-height: 400px
-width: 100%;
-`;
-
-const Expotech = styled.div`
-color: #4BAC66;
-`
-
-export default function About() {
-
-    // const Box = () => {
-
-    //     const [hovered, setHover] = useState(false);
-    //     const [active, setActive] = useState(false);
-    //     const props = useSpring({
-    //         scale: active ? [1.5, 1.5, 1.5] : [1, 1, 1],
-    //         color: active ? 'red' : "gray"
-    //     });
-
-    //     const meshRef = useRef();
-
-    //     useFrame((state, delta) => (meshRef.current.rotation.x += 0.01))
-
-    //     return (
-    //         <animated.mesh onPointerOver={() => setHover(true)}
-    //             onPointerOut={() => setHover(false)}
-    //             onClick={() => setActive(!active)}
-    //             scale={props.scale}
-    //             color={props.color}
-    //             ref={meshRef}
-    //         >
-    //             <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-    //             <meshBasicMaterial attach="material" color={hovered ? "green" : "gray"} />
-    //         </animated.mesh>
-    //     )
-    // }
-    return (
-        <>
-            <Content>
-                <Img src={hacker} />
-                <Stack>
-                    <h1 className="tech-title"><b> SOME TECH STACKS I USE </b> </h1>
-                    <div className="Software">
-                        <br />                    <span> C# ASP.Net </span> |
-                        <span> Javascript </span> |
-                        <span> Python </span> |
-                        <span> Angular </span> |
-                        <span> React </span> |
-                        <span> Pytorch </span> |
-                        <span> Tensorflow </span> |
-                        <span> Pandas, Scikit-learn, numpy </span> |
-                        <span>Git, github, Trello </span>
-                    </div>
-                    <br />
-                    <div className="Electrical">
-                        <span> Digsilent Powerfactory </span> |
-                        <span> AUTOCAD </span> |
-                        <span> Helioscope </span> |
-                        <span> PVSyst</span> |
-                        <span> PV*SOL </span>
-                    </div>
-                </Stack>
-            </Content>
-        </>
-    )
+function About() 
+{
+  return (
+    <div className="bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="lg:text-center">
+          <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            About Me
+          </h2>
+          <div className="mt-10 sm:flex sm:justify-center lg:justify-center">
+            <div className="mr-8 flex-shrink-0">
+              <img
+                className="h-64 w-64 rounded-full object-cover"
+                src={aboutPic}
+                alt="About Me"
+              />
+            </div>
+            <div className="mt-5 sm:mt-0">
+              <p className="mt-3 max-w-2xl text-xl text-gray-500">
+                I am a digital transformation expert with a background in electrical engineering and software development. I have a passion for leveraging technology to drive business value and sustainability.
+              </p>
+              <p className="mt-3 max-w-2xl text-xl text-gray-500">
+                After completing my degree in electrical engineering, I worked as a software developer for several years before starting my own startup. This experience gave me a deep understanding of how technology can be used to solve real-world problems and create value for businesses.
+              </p>
+              <p className="mt-3 max-w-2xl text-xl text-gray-500">
+                In my current role, I help organizations develop and implement digital transformation strategies that drive growth, improve efficiency, and support sustainability. I am passionate about using technology to create a better world and I believe that digital transformation is a key driver of positive change.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+export default About;
