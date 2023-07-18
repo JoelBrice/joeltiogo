@@ -7,14 +7,14 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Smart Air",
-      description: "A Patented IoT solution that detect air quality in a given environment and sends the data to a dashbord.",
+      description: "A Patented IoT solution that detect air quality in a given environment and sends the data to a dashboard.",
       image: SmartAIr,
       link: "https://www.smartair.co.za"
     },
     {
       id: 2,
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Expotech Industries",
+      description: "A startup that provides high quality consulting services in Electrical Engineering, Software Engineering, and Skills development in 4IR.",
       image: "/images/project2.jpg",
       link: "../assets/images/smartair.png",
     },
