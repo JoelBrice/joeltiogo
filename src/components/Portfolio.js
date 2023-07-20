@@ -21,10 +21,10 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Project 3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Mentorship App",
+      description: "One of the most important factors in having a good education, a good career, and a fullfilling life require having a good relationship with those that you can either help achieve greatness or that can help you achieve it yourself. It is therefore important that we find the time to give back, and also get to learn from the most experienced.",
       image: "../assets/images/smartair.png",
-      link: "https://www.example.com/project3",
+      link: "mentorship",
     },
   ];
 
