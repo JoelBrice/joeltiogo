@@ -20,7 +20,7 @@ function Home() {
             />
           </div>
           <h2 className="mt-4 text-base text-indigo-600 font-semibold tracking-wide uppercase">
-            Welcome to my portfolio
+            Welcome to my website!
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             I am Joel Tiogo, Business Development Manager at <a href="http://www.syenah.ai" className="text-blue-600">Syenah GmbH</a>
@@ -46,7 +46,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-center"> Let's connect!
             <a
               href="https://www.linkedin.com/in/joeltiogo/"
               target="_blank"
