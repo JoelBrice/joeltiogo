@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.072febd4.css",
-    "main.js": "/static/js/main.915e2d32.js",
+    "main.js": "/static/js/main.c9e31b55.js",
     "static/js/787.84f6f9c2.chunk.js": "/static/js/787.84f6f9c2.chunk.js",
     "static/media/0.jpg": "/static/media/0.3ebd2ed19f0a6c1cb10d.jpg",
     "static/media/expotech.svg": "/static/media/expotech.93496be11e837b724161cc0006d28919.svg",
     "static/media/smartair.png": "/static/media/smartair.55c86c5dc02fdab3752e.png",
     "index.html": "/index.html",
     "main.072febd4.css.map": "/static/css/main.072febd4.css.map",
-    "main.915e2d32.js.map": "/static/js/main.915e2d32.js.map",
+    "main.c9e31b55.js.map": "/static/js/main.c9e31b55.js.map",
     "787.84f6f9c2.chunk.js.map": "/static/js/787.84f6f9c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.072febd4.css",
-    "static/js/main.915e2d32.js"
+    "static/js/main.c9e31b55.js"
   ]
 }

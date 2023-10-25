@@ -28,20 +28,21 @@ function Home() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="lg:text-left py-20">
           <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl">
-          Business Development Engineer
+          Business Developer
           </p>
-          <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl"> Digital Transformation & ESG Consultant</p>
-          <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl">Tech Entrepreneur</p>
+          <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl"> Digital Transformation </p>
+          <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl"> ESG Consultant </p>
         </div>
       </div>
     </Header>
     <Container>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-5 py-12">
         <Intro className="content">
-          <p className="mt-4 max-w-2xl text-xl lg:mx-auto">
-            I specialize in leveraging technology for business value and sustainability, with a focus on ESG.
-          </p>
-          <div className="mt-10 sm:flex sm:justify-start lg:justify-start ">
+          <p className="mt-3 max-w-2xl text-xl lg:mx-auto">
+          With a strong background in Electrical Engineering and hands-on experience in both the solar energy and software sectors, I'm currently navigating the exciting role of leading New Business Development at Syenah. I combine my tech-savvy skills and an unwavering commitment to ESG principles to bring about sustainable business growth. 
+          I’m especially excited about the transformative power of AI and other Fourth Industrial Revolution technologies. 
+          Armed with a strong professional network and a keen sense for future tech trends, I am on a mission to help businesses forge a path towards a sustainable and successful future.</p>
+          <div className="mt-10 sm:flex sm:justify-center lg:justify-center ">
             <a href="/portfolio"
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
             >
