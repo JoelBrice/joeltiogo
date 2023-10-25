@@ -39,9 +39,13 @@ function Home() {
       <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-5 py-12">
         <Intro className="content">
           <p className="mt-3 max-w-2xl text-xl lg:mx-auto">
-          With a strong background in Electrical Engineering and hands-on experience in both the solar energy and software sectors, I'm currently navigating the exciting role of leading New Business Development at Syenah. I combine my tech-savvy skills and an unwavering commitment to ESG principles to bring about sustainable business growth. 
-          I’m especially excited about the transformative power of AI and other Fourth Industrial Revolution technologies. 
-          Armed with a strong professional network and a keen sense for future tech trends, I am on a mission to help businesses forge a path towards a sustainable and successful future.</p>
+          I have a unique blend of qualifications and experiences in electrical engineering, software, entrepreneurship, and the ESG space.</p>
+          
+          <p className="mt-3 max-w-2xl text-xl lg:mx-auto">
+          Passionate about the 4th Industrial Revolution (4IR) and sustainability, I integrate technical expertise with ESG principles at Syenah, spearheading new business development.
+          <br/>
+          I actively engage with professionals, attend meet-ups, and value personal growth through activities like football, chess, and reading. Let's connect to explore collaborative opportunities in emerging technologies and ESG, driving positive change towards a sustainable future.
+          </p>
           <div className="mt-10 sm:flex sm:justify-center lg:justify-center ">
             <a href="/portfolio"
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
