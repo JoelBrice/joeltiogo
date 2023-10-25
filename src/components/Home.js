@@ -30,8 +30,8 @@ function Home() {
           <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl">
           Business Developer
           </p>
-          <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl"> Digital Transformation </p>
           <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl"> ESG Consultant </p>
+          <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl"> Digital Transformation </p>
         </div>
       </div>
     </Header>
