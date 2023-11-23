@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/images/0.jpg";
+import profilePic from "../assets/images/hacker.jpg";
 import styled from 'styled-components';
 import { LinkedIn, Email } from "@mui/icons-material";
 import PlaceIcon from '@mui/icons-material/Place';
@@ -40,7 +40,6 @@ function Home() {
         <Intro className="content">
           <p className="mt-3 max-w-2xl text-xl lg:mx-auto">
           I have a unique blend of qualifications and experiences in electrical engineering, software, entrepreneurship, and the ESG space.</p>
-          
           <p className="mt-3 max-w-2xl text-xl lg:mx-auto">
           Passionate about the 4th Industrial Revolution (4IR) and sustainability, I integrate technical expertise with ESG principles at Syenah, spearheading new business development.
           <br/>
@@ -63,7 +62,7 @@ function Home() {
             <LinkedIn fontSize="large" className="mr-2"/> 
             <a href="https://www.linkedin.com/in/joeltiogo/" target="_blank" rel="noopener noreferrer" className="text-white">LinkedIn</a>
             <Email fontSize="large" className="ml-4 mr-2"/> 
-            <a href="mailto:joeltiogo@example.com" className="text-white">Email</a>
+            <a href="mailto:tiogojoel@gmail.com" className="text-white">Email</a>
             <PlaceIcon fontSize="large" className="ml-4 mr-2"/> 
             <p className="text-white">Frankfurt am Main, Germany</p>
           </div>

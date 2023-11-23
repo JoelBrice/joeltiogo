@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const navigation = [
   { href: "/", name: 'Home', current: false },
   { href: "/about", name: 'About', current: false },
-  { href: "/portfolio", name: 'Portfolio', current: false },
+  // { href: "/portfolio", name: 'Portfolio', current: false },
   { href: "/blog", name: 'Blog', current: false },
 ];
 
