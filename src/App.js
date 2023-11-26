@@ -3,7 +3,6 @@ import Nav from './components/Navbar';
 import About from './components/About';
 import Blog from './components/Blog';
 import NofFound from './components/NofFound';
-import Portfolio from './components/Portfolio';
 import Home from './components/Home';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<NofFound />} />
       </Routes>
