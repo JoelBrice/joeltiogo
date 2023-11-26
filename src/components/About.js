@@ -15,7 +15,7 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import GroupIcon from '@mui/icons-material/Group';
-
+import MemoryIcon from '@mui/icons-material/Memory';
 
 const ExperienceSection = styled.section`
   display: flex;
@@ -148,6 +148,7 @@ const skills = [
   { name: "Git", icon: <GitHubIcon fontSize="large" /> },
   { name: "Azure", icon: <StorageIcon fontSize="large" /> },
   { name: "Linux", icon: <TerminalIcon fontSize="large" /> },
+  { name: "Embedded Systems", icon: <MemoryIcon fontSize="large" /> },
 ];
 
 
