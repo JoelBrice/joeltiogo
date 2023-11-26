@@ -73,6 +73,7 @@ const Container = styled.main`
     a {
       color: white;
       transition: transform 0.2s ease;
+      text-decoration: none;
   
       &:hover {
         transform: translateY(-2px);
@@ -93,11 +94,12 @@ const Container = styled.main`
         <Header>
           <img src={profilePic} alt="Profile" />
           <ContentContainer>
-            <h1 className="font-bold text-4xl text-blue-900">
-            Business Developer & ESG Consultant
+            
+          <h1 className="font-bold text-4xl text-blue-900 mb-4">
+            Business Developer | ESG Consultant | Digital Transformation Specialist
           </h1>
           <p className="mt-4 text-xl text-blue-900 sm:text-2xl">
-            Championing digital transformation with a passion for sustainability.
+          Strategic leader in sustainable business growth, Digital Transformation and Environmental, Social, and Governance (ESG) solutions.
           </p>
         </ContentContainer>
       </Header>
@@ -112,27 +114,25 @@ const Container = styled.main`
           <CallToActionBtn href="/blog">
             Read My Blog
           </CallToActionBtn>
-        </Intro>
         <SocialLinks>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/joeltiogo/" target="_blank" rel="noopener noreferrer">
             <IconWrapper>
-              <LinkedIn  fontSize="large" color="primary" />
+              <LinkedIn  fontSize="large"  />
             </IconWrapper>
-            LinkedIn
           </a>
-          <a href="mailto:tiogo@gmail.com">
+          <a href="mailto:tiogojoel@gmail.com">
             <IconWrapper>
-              <Email fontSize="large" color="primary"/>
+              <Email fontSize="large" />
             </IconWrapper>
-            Email
             </a>
           <a>
             <IconWrapper>
-              <PlaceIcon fontSize="large"  color="primary" />
+              <PlaceIcon fontSize="large"  />
             </IconWrapper>
-            Frankfurt am Main, Germany
+            65428 Rüsselsheim am Main, Germany
           </a>
         </SocialLinks>
+        </Intro>
       </Container>
     </div>
   );
