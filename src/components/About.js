@@ -16,6 +16,8 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import GroupIcon from '@mui/icons-material/Group';
 import MemoryIcon from '@mui/icons-material/Memory';
+import ModelTrainingIcon from '@mui/icons-material/ModelTraining';
+
 
 const ExperienceSection = styled.section`
   display: flex;
@@ -75,7 +77,7 @@ const experienceItems = [
   {
     icon: <LightbulbIcon className="icon" />,
     title: 'Innovation & Technology',
-    description: 'Founded and led a startup in 4IR where I build soliutions using cutting-edge tech and innovative strategies.'
+    description: 'Built innovative software and Electrical engineering solutions  and founded a startup.'
   },
   {
     icon: <GroupIcon className="icon" />,
@@ -149,6 +151,7 @@ const skills = [
   { name: "Azure", icon: <StorageIcon fontSize="large" /> },
   { name: "Linux", icon: <TerminalIcon fontSize="large" /> },
   { name: "Embedded Systems", icon: <MemoryIcon fontSize="large" /> },
+  {name: "Machine Learning",   icon: <ModelTrainingIcon fontSize="large" />,}
 ];
 
 
@@ -159,8 +162,8 @@ function About()
        
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="lg:text-center">
-          <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            About Me
+        <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
+        Professional Expertise Snapshot
           </h2>
           <div className="mt-10 sm:flex sm:justify-center lg:justify-center">
             <div className="mr-8 flex-shrink-0">
@@ -181,6 +184,9 @@ function About()
             ))}
           </ExperienceSection>
         </div>
+        <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
+          Techncical Expertise
+          </h2>
         <SkillsSection>
       {skills.map((skill) => (
         <SkillCard key={skill.name}>
